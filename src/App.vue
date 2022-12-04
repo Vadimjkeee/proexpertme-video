@@ -1,26 +1,92 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <section-video :title="title" :list="list" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SectionVideo from "@/components/SectionVideo";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { SectionVideo },
+  data() {
+    return {
+      title: "Обучающие видео",
+      list: [
+        {
+          image: { src: require("@/assets/img/doctors.png"), alt: "Доктора" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Первая международная онлайн-конференция «Как бороться со стрессом и тревогой?»',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/child.png"), alt: "Мальчик" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Инновация: La Roche-Posay Vitamin 10 Антиоксидантная сыворотка для обновления кожи',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/baby.png"), alt: "Ребенок" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Первая международная онлайн-конференция «Как бороться со стрессом и тревогой?»',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/woman.png"), alt: "Женщина" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Инновация: La Roche-Posay Vitamin 10 Антиоксидантная сыворотка для обновления кожи',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/child.png"), alt: "Мальчик" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Инновация: La Roche-Posay Vitamin 10 Антиоксидантная сыворотка для обновления кожи',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/doctors.png"), alt: "Доктора" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Первая международная онлайн-конференция «Как бороться со стрессом и тревогой?»',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/woman.png"), alt: "Женщина" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк"},
+          title: 'Инновация: La Roche-Posay Vitamin 10 Антиоксидантная сыворотка для обновления кожи',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/baby.png"), alt: "Ребенок" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк"},
+          title: 'Первая международная онлайн-конференция «Как бороться со стрессом и тревогой?»',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/doctors.png"), alt: "Доктора" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Первая международная онлайн-конференция «Как бороться со стрессом и тревогой?»',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+        {
+          image: { src: require("@/assets/img/child.png"), alt: "Мальчик" },
+          play: { src: require("@/assets/img/play.svg"), alt: "Воспроизвести" },
+          like: { src: require("@/assets/img/like.svg"), alt: "Лайк" },
+          title: 'Инновация: La Roche-Posay Vitamin 10 Антиоксидантная сыворотка для обновления кожи',
+          video: { src: "https://htmlbase.ru/storage/app/media/demo.mp4" }
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
